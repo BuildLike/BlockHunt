@@ -41,7 +41,7 @@ class BlockHuntCommand extends MiniGameBase {
 	 * @param array $args        	
 	 * @return boolean
 	 */
-	public function onCommand(CommandSender $sender, Command $command, $label, array $args) {
+	public function onCommand(CommandSender $sender, Command $command, $label, array $args) : bool {
 		// check command names
 		if (((strtolower ( $command->getName () ) === "blockhunt" || strtolower ( $command->getName () ) === "bh")) && isset ( $args [0] )) {
 			try {
